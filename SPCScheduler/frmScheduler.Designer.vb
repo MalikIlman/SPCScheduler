@@ -142,7 +142,7 @@ Partial Class frmScheduler
         '
         Me.btnStop.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnStop.Enabled = False
-        Me.btnStop.Image = Global.OGIScheduler.My.Resources.Resources.control_stop
+        Me.btnStop.Image = Global.SPCScheduler.My.Resources.Resources.control_stop
         Me.btnStop.Location = New System.Drawing.Point(522, 13)
         Me.btnStop.Name = "btnStop"
         Me.btnStop.Size = New System.Drawing.Size(74, 26)
@@ -154,7 +154,7 @@ Partial Class frmScheduler
         'btnStart
         '
         Me.btnStart.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnStart.Image = Global.OGIScheduler.My.Resources.Resources.control_play_blue
+        Me.btnStart.Image = Global.SPCScheduler.My.Resources.Resources.control_play_blue
         Me.btnStart.Location = New System.Drawing.Point(446, 13)
         Me.btnStart.Name = "btnStart"
         Me.btnStart.Size = New System.Drawing.Size(74, 26)

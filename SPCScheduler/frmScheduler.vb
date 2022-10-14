@@ -29,7 +29,6 @@ Public Class frmScheduler
     Private Const fJam As String = "HHmm"
     Dim FileTitle1 As String = ""
     Dim FileTitle2 As String = ""
-    Dim Sched As New clsScheduler
     Public ConStr As String = st.m_ConnectionString
     Dim pErr As String
     Dim dtExec As DateTime

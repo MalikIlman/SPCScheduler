@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.OGIScheduler.frmScheduler
+            Me.MainForm = Global.SPCScheduler.frmScheduler
         End Sub
     End Class
 End Namespace

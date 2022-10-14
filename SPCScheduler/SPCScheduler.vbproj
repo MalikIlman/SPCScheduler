@@ -8,9 +8,9 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{FB33FF4B-C967-42BC-B1FA-9E663FDDC8D7}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>OGIScheduler.My.MyApplication</StartupObject>
-    <RootNamespace>OGIScheduler</RootNamespace>
-    <AssemblyName>OGIScheduler</AssemblyName>
+    <StartupObject>SPCScheduler.My.MyApplication</StartupObject>
+    <RootNamespace>SPCScheduler</RootNamespace>
+    <AssemblyName>SPCScheduler</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
@@ -23,7 +23,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>OGIScheduler.xml</DocumentationFile>
+    <DocumentationFile>SPCScheduler.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
@@ -33,7 +33,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>OGIScheduler.xml</DocumentationFile>
+    <DocumentationFile>SPCScheduler.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -51,6 +51,9 @@
   <PropertyGroup>
     <ApplicationIcon>
     </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
@@ -79,10 +82,9 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
     <Compile Include="clsConfig.vb" />
     <Compile Include="clsDESEncryption.vb" />
-    <Compile Include="clsScheduler.vb" />
-    <Compile Include="clsSchedulerDB.vb" />
     <Compile Include="clsSchedulerLog.vb" />
     <Compile Include="clsAlertDashboard.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -119,6 +121,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

@@ -37,3 +37,12 @@ D:\Project\OGIScheduler\SPCScheduler\obj\x86\Debug\SPCScheduler.vbproj.GenerateR
 D:\Project\OGIScheduler\SPCScheduler\obj\x86\Debug\OGIScheduler.exe
 D:\Project\OGIScheduler\SPCScheduler\obj\x86\Debug\OGIScheduler.xml
 D:\Project\OGIScheduler\SPCScheduler\obj\x86\Debug\OGIScheduler.pdb
+D:\Project\testpull\SPCScheduler\SPCScheduler\obj\x86\Debug\SPCScheduler.exe
+D:\Project\testpull\SPCScheduler\SPCScheduler\obj\x86\Debug\SPCScheduler.xml
+D:\Project\testpull\SPCScheduler\SPCScheduler\obj\x86\Debug\SPCScheduler.pdb
+D:\Project\testpull\SPCScheduler\SPCScheduler\bin\Debug\SPCScheduler.exe
+D:\Project\testpull\SPCScheduler\SPCScheduler\bin\Debug\SPCScheduler.pdb
+D:\Project\testpull\SPCScheduler\SPCScheduler\bin\Debug\SPCScheduler.xml
+D:\Project\testpull\SPCScheduler\SPCScheduler\obj\x86\Debug\SPCScheduler.Resources.resources
+D:\Project\testpull\SPCScheduler\SPCScheduler\obj\x86\Debug\SPCScheduler.frmScheduler.resources
+D:\Project\testpull\SPCScheduler\SPCScheduler\obj\x86\Debug\SPCScheduler.vbproj.GenerateResource.Cache
