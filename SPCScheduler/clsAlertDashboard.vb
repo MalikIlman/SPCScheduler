@@ -37,7 +37,7 @@ Public Class clsAlertDashboardDB
     Public ConStr As String = st.m_ConnectionString
 #End Region
 
-    Public Shared Function GetListNGResult(User As String, FactoryCode As String, ConStr As String, Optional ByRef pErr As String = "") As List(Of clsAlertDashboard)
+    Public Shared Function GetListNGResult(FactoryCode As String, ConStr As String, Optional ByRef pErr As String = "") As List(Of clsAlertDashboard)
         Try
             Using conn As New SqlConnection(ConStr)
                 conn.Open()
@@ -46,8 +46,9 @@ Public Class clsAlertDashboardDB
 
                 Dim cmd As New SqlCommand(sql, conn)
                 cmd.CommandType = CommandType.StoredProcedure
-                cmd.Parameters.AddWithValue("User", User)
+                cmd.Parameters.AddWithValue("User", "")
                 cmd.Parameters.AddWithValue("FactoryCode", FactoryCode)
+                cmd.Parameters.AddWithValue("TypeReport", 2)
 
                 Dim rd As SqlDataReader = cmd.ExecuteReader
                 Dim AlertList As New List(Of clsAlertDashboard)
@@ -78,7 +79,7 @@ Public Class clsAlertDashboardDB
         End Try
     End Function
 
-    Public Shared Function GetListDelayInput(User As String, FactoryCode As String, ConStr As String, Optional ByRef pErr As String = "") As List(Of clsAlertDashboard)
+    Public Shared Function GetListDelayInput(FactoryCode As String, ConStr As String, Optional ByRef pErr As String = "") As List(Of clsAlertDashboard)
         Try
             Using conn As New SqlConnection(ConStr)
                 conn.Open()
@@ -87,8 +88,9 @@ Public Class clsAlertDashboardDB
 
                 Dim cmd As New SqlCommand(sql, conn)
                 cmd.CommandType = CommandType.StoredProcedure
-                cmd.Parameters.AddWithValue("User", User)
+                cmd.Parameters.AddWithValue("User", "")
                 cmd.Parameters.AddWithValue("FactoryCode", FactoryCode)
+                cmd.Parameters.AddWithValue("TypeReport", 2)
 
                 Dim rd As SqlDataReader = cmd.ExecuteReader
                 Dim AlertList As New List(Of clsAlertDashboard)
@@ -115,7 +117,7 @@ Public Class clsAlertDashboardDB
         End Try
     End Function
 
-    Public Shared Function GetListDelayVerification(User As String, FactoryCode As String, ConStr As String, Optional ByRef pErr As String = "") As List(Of clsAlertDashboard)
+    Public Shared Function GetListDelayVerification(FactoryCode As String, ConStr As String, Optional ByRef pErr As String = "") As List(Of clsAlertDashboard)
         Try
             Using conn As New SqlConnection(ConStr)
                 conn.Open()
@@ -124,8 +126,9 @@ Public Class clsAlertDashboardDB
 
                 Dim cmd As New SqlCommand(sql, conn)
                 cmd.CommandType = CommandType.StoredProcedure
-                cmd.Parameters.AddWithValue("User", User)
+                cmd.Parameters.AddWithValue("User", "")
                 cmd.Parameters.AddWithValue("FactoryCode", FactoryCode)
+                cmd.Parameters.AddWithValue("TypeReport", 2)
 
                 Dim rd As SqlDataReader = cmd.ExecuteReader
                 Dim AlertList As New List(Of clsAlertDashboard)

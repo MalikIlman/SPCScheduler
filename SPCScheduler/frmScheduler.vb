@@ -102,7 +102,7 @@ Public Class frmScheduler
         If chkNGResult.Checked = True Then
             Try
                 Dim FactoryCode As String = cboFactory.SelectedValue
-                Dim Alertlist As List(Of clsAlertDashboard) = clsAlertDashboardDB.GetListNGResult("zqc", FactoryCode, ConStr)
+                Dim Alertlist As List(Of clsAlertDashboard) = clsAlertDashboardDB.GetListNGResult(FactoryCode, ConStr)
 
                 For Each AlertData In Alertlist
 
@@ -133,7 +133,7 @@ Public Class frmScheduler
         If chkDelayVerification.Checked = True Then
             Try
                 Dim FactoryCode As String = cboFactory.SelectedValue
-                Dim Alertlist As List(Of clsAlertDashboard) = clsAlertDashboardDB.GetListDelayVerification("zqc", FactoryCode, ConStr)
+                Dim Alertlist As List(Of clsAlertDashboard) = clsAlertDashboardDB.GetListDelayVerification(FactoryCode, ConStr)
 
                 For Each AlertData In Alertlist
 
@@ -164,7 +164,7 @@ Public Class frmScheduler
         If chkDelayInput.Checked Then
             Try
                 Dim FactoryCode As String = cboFactory.SelectedValue
-                Dim Alertlist As List(Of clsAlertDashboard) = clsAlertDashboardDB.GetListDelayInput("zqc", FactoryCode, ConStr)
+                Dim Alertlist As List(Of clsAlertDashboard) = clsAlertDashboardDB.GetListDelayInput(FactoryCode, ConStr)
 
                 For Each AlertData In Alertlist
 
@@ -217,6 +217,7 @@ Public Class frmScheduler
         btnStop.Enabled = True
         btnClear.Enabled = False
         cboFactory.Enabled = False
+        txtFactory.Enabled = False
 
         dtExec = Microsoft.VisualBasic.Format(Now.AddMinutes(st.m_IntervalValue), "yyyy-MM-dd HH:mm:ss")
 
@@ -236,6 +237,8 @@ Public Class frmScheduler
         btnStart.Enabled = True
         btnStop.Enabled = False
         btnClear.Enabled = True
+        txtFactory.Enabled = True
+        cboFactory.Enabled = True
 
         chkNGResult.Enabled = True
         chkDelayVerification.Enabled = True

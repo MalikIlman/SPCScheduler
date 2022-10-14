@@ -40,7 +40,7 @@ Partial Class frmScheduler
         Me.chkDelayVerification = New System.Windows.Forms.CheckBox()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.chkDelayInput = New System.Windows.Forms.CheckBox()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtFactory = New System.Windows.Forms.Label()
         Me.cboFactory = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
@@ -210,15 +210,15 @@ Partial Class frmScheduler
         Me.chkDelayInput.UseMnemonic = False
         Me.chkDelayInput.UseVisualStyleBackColor = True
         '
-        'Label2
+        'txtFactory
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Tahoma", 8.25!)
-        Me.Label2.Location = New System.Drawing.Point(14, 49)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(44, 13)
-        Me.Label2.TabIndex = 68
-        Me.Label2.Text = "Factory"
+        Me.txtFactory.AutoSize = True
+        Me.txtFactory.Font = New System.Drawing.Font("Tahoma", 8.25!)
+        Me.txtFactory.Location = New System.Drawing.Point(14, 49)
+        Me.txtFactory.Name = "txtFactory"
+        Me.txtFactory.Size = New System.Drawing.Size(44, 13)
+        Me.txtFactory.TabIndex = 68
+        Me.txtFactory.Text = "Factory"
         '
         'cboFactory
         '
@@ -234,7 +234,7 @@ Partial Class frmScheduler
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(719, 331)
         Me.Controls.Add(Me.cboFactory)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.txtFactory)
         Me.Controls.Add(Me.chkDelayInput)
         Me.Controls.Add(Me.chkDelayVerification)
         Me.Controls.Add(Me.chkNGResult)
@@ -273,6 +273,6 @@ Partial Class frmScheduler
     Friend WithEvents chkDelayVerification As CheckBox
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents chkDelayInput As System.Windows.Forms.CheckBox
-    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents txtFactory As System.Windows.Forms.Label
     Friend WithEvents cboFactory As System.Windows.Forms.ComboBox
 End Class
